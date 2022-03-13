@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Hello Gridea | Gridea</title>
-<link rel="shortcut icon" href="https://little-liang.github.io/favicon.ico?v=1647165480338">
+<link rel="shortcut icon" href="https://little-liang.github.io/favicon.ico?v=1647165545919">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://little-liang.github.io/styles/main.css">
 <link rel="alternate" type="application/atom+xml" title="Hello Gridea | Gridea - Atom Feed" href="https://little-liang.github.io/atom.xml">
@@ -28,7 +28,7 @@ Gridea 主页
       <div class="main-content">
         <div class="site-header">
   <a href="https://little-liang.github.io">
-  <img class="avatar" src="https://little-liang.github.io/images/avatar.png?v=1647165480338" alt="">
+  <img class="avatar" src="https://little-liang.github.io/images/avatar.png?v=1647165545919" alt="">
   </a>
   <h1 class="site-title">
     Gridea
@@ -140,6 +140,32 @@ Gridea 主页
 
         
 
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: 'f6c2a87cd46ac8e5dfe0',
+    clientSecret: '44cdd0b0c2fa829aa010fde042148e6a19f9d0db',
+    repo: 'little-liang.github.io',
+    owner: 'little-liang',
+    admin: ['little-liang'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
         
 
         <div class="site-footer">
